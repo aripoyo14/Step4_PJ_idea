@@ -50,11 +50,11 @@ jobs:
       - name: Deploy frontend to App Service
         uses: azure/webapps-deploy@v2
         with:
-          app-name: YOUR_FRONTEND_APP_SERVICE_NAME
+          app-name: Actionable-front
           images: containerdeploytrial.azurecr.io/pj_idea-frontend:${{ github.sha }}
 
       - name: Deploy backend to App Service
         uses: azure/webapps-deploy@v2
         with:
-          app-name: YOUR_BACKEND_APP_SERVICE_NAME
+          app-name: Actionable-back
           images: containerdeploytrial.azurecr.io/pj_idea-backend:${{ github.sha }}
